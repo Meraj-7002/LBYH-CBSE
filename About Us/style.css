@@ -1,0 +1,109 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./asset/bg-keyfeatures.png);
+}
+
+
+
+.heading{
+    color: #008080;
+    font-weight: 800;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Row 1 styles */
+.row-1 h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.row-1 p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Row 2 styles */
+.row-2 h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.row-2 p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.mission-wrapper {
+  position: relative;
+  height: 100%; /* Adjust the height as needed */
+}
+
+.mission-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1 0 30%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #008080;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.column h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.column a {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.column:hover {
+  background-color: #008080;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 0 100%;
+  }
+  .mission-columns {
+    flex-direction: column;
+  }
+}
+
+/* Carousel styles (using external library Swiper) */
+.swiper {
+  height: 40vh; /* Adjust the height as needed */
+}
